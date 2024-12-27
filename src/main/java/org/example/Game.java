@@ -26,12 +26,13 @@ public class Game {
             Resource resource = allResources.get(rand.nextInt(allResources.size()));
             PricingModel pricingModel = new PricingModel(resource.basePrice);
 
+
             if (!globalMarket.toSell.isEmpty()) {
-                pricingModel.setSupply("segment1", calculateMarketQuantity(resource, globalMarket.toSell));
+                pricingModel.setSupply(resource.toString(), calculateMarketQuantity(resource, globalMarket.toSell));
             }
 
             if (!globalMarket.toBuy.isEmpty()) {
-                pricingModel.setDemand("segment1", calculateMarketQuantity(resource, globalMarket.toBuy));
+                pricingModel.setDemand(resource.toString(), calculateMarketQuantity(resource, globalMarket.toBuy));
             }
 
             int prob = rand.nextInt(2);

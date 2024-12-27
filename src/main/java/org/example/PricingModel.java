@@ -25,6 +25,8 @@ public class PricingModel {
     public double calculatePrice() {
         int totalDemand = demand.values().stream().mapToInt(Integer::intValue).sum();
         int totalSupply = supply.values().stream().mapToInt(Integer::intValue).sum();
+        if (totalSupply==0){ totalSupply++; }
+        if (totalDemand==0){ totalDemand++; }
 
         if (totalDemand > totalSupply) {
             // Увеличиваем цену при высоком спросе
