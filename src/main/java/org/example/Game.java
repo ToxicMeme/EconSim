@@ -12,9 +12,9 @@ public class Game {
         allResources.add(new Resource(Resource.ResourceName.FOOD, Resource.ResourceType.BASE, 10.0));
         allResources.add(new Resource(Resource.ResourceName.ALOY, Resource.ResourceType.SECONDARY, 10.0));
         allResources.add(new Resource(Resource.ResourceName.TMC, Resource.ResourceType.SECONDARY, 10.0));
-        allResources.add(new Resource(Resource.ResourceName.INFL, Resource.ResourceType.ABSRACT, 10.0));
-        allResources.add(new Resource(Resource.ResourceName.UNTY, Resource.ResourceType.ABSRACT, 10.0));
-        allResources.add(new Resource(Resource.ResourceName.SPTS, Resource.ResourceType.ABSRACT, 10.0));
+        allResources.add(new Resource(Resource.ResourceName.INFL, Resource.ResourceType.ABSTRACT, 10.0));
+        allResources.add(new Resource(Resource.ResourceName.UNTY, Resource.ResourceType.ABSTRACT, 10.0));
+        allResources.add(new Resource(Resource.ResourceName.SPTS, Resource.ResourceType.ABSTRACT, 10.0));
         allResources.add(new Resource(Resource.ResourceName.DRKM, Resource.ResourceType.STRATEGIC, 10.0));
         allResources.add(new Resource(Resource.ResourceName.NANI, Resource.ResourceType.STRATEGIC, 10.0));
 
