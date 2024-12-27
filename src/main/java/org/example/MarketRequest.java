@@ -18,6 +18,6 @@ public class MarketRequest {
 
     @Override
     public String toString(){
-        return "Ресурс: " + resource.toString() + " Количество: " + quantity + " По цене: "+ pricePerUnit*quantity + "\n";
+        return "Ресурс: " + resource.toString() + " | Количество: " + quantity + " | По цене: "+ pricePerUnit*quantity + "\n";
     }
 }

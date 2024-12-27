@@ -18,8 +18,16 @@ public class PricingModel {
         demand.put(segment, quantity);
     }
 
+    public void removeDemand(String segment, int quantity) {
+        demand.remove(segment, quantity);
+    }
+
     public void setSupply(String segment, int quantity) {
         supply.put(segment, quantity);
+    }
+
+    public void removeSupply(String segment, int quantity) {
+        supply.remove(segment, quantity);
     }
 
     public double calculatePrice() {
