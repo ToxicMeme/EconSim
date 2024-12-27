@@ -15,12 +15,10 @@ public class PricingModel {
     }
 
     public void setDemand(String segment, int quantity) {
-
         demand.put(segment, quantity);
     }
 
     public void setSupply(String segment, int quantity) {
-
         supply.put(segment, quantity);
     }
 

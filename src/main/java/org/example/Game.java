@@ -37,11 +37,11 @@ public class Game {
             int prob = rand.nextInt(2);
             switch (prob) {
                 case 0:
-                    globalMarket.toSell.add(new MarketRequest(MarketRequest.RequestType.SELL, allResources.get(rand.nextInt(allResources.size())),
+                    globalMarket.toSell.add(new MarketRequest(MarketRequest.RequestType.SELL, resource,
                             rand.nextInt(99)+1, pricingModel.calculatePrice()));
                     break;
                 case 1:
-                    globalMarket.toBuy.add(new MarketRequest(MarketRequest.RequestType.BUY, allResources.get(rand.nextInt(allResources.size())),
+                    globalMarket.toBuy.add(new MarketRequest(MarketRequest.RequestType.BUY, resource,
                             rand.nextInt(99)+1, pricingModel.calculatePrice()));
                     break;
                 default:
