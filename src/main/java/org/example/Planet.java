@@ -14,21 +14,33 @@ public class Planet {
         Random rand = new Random();
         switch (type){
             case ROCKY:
-                description = "Скалистая";
-                mineCapacity = rand.nextFloat(10000)+50000;
-                basicFood = rand.nextFloat(500);
+                description = "Минеральная планета";
+                mineCapacity = rand.nextFloat(3000)+6000;
+                basicFood = rand.nextFloat(3000);
                 break;
             case GREEN:
-                description = "Земного типа";
-                mineCapacity = rand.nextFloat(5000)+10000;
-                basicFood = rand.nextFloat(10000)+20000;
+                description = "Аграрная планета";
+                mineCapacity = rand.nextFloat(3000);
+                basicFood = rand.nextFloat(3000)+6000;
+                break;
+            case BALANCE:
+                description = "Сбалансированная планета";
+                mineCapacity = rand.nextFloat(3000)+3000;
+                basicFood = rand.nextFloat(3000)+3000;
+                break;
+            case FACTORY:
+                description = "Промышленная планета";
+                mineCapacity = rand.nextFloat(3000)+3000;
+                basicFood = rand.nextFloat(3000)+3000;
                 break;
         }
     }
 
     enum PlanetType {
         ROCKY,
-        GREEN;
+        GREEN,
+        BALANCE,
+        FACTORY
     }
 
     @Override

@@ -23,18 +23,19 @@ public class Game {
 
         allPlanets.add(new Planet("Орион", Planet.PlanetType.ROCKY));
         allPlanets.add(new Planet("Ujyjkeke-35b", Planet.PlanetType.GREEN));
+        allPlanets.add(new Planet("Elysium-11", Planet.PlanetType.BALANCE));
+        allPlanets.add(new Planet("Vespera Prime", Planet.PlanetType.FACTORY));
+
+        for(Planet planet : allPlanets){
+            System.out.println(planet.toString() +
+                    "\n" + planet.description +
+                    "\n - Количество минералов: " + planet.mineCapacity +
+                    "\n - Количество еды: " + planet.basicFood);
+        }
 
         while (true) {
-
             //Resource resource = allResources.get(rand.nextInt(allResources.size()));
             //handlingGlobalMarket(resource);
-            for(Planet planet : allPlanets){
-                System.out.println(planet.toString() +
-                        "\n" + planet.description +
-                        "\n - Количество минералов: " + planet.mineCapacity +
-                        "\n - Количество еды: " + planet.basicFood);
-            }
-
             Thread.sleep(2000);
         }
     }
