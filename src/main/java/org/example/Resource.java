@@ -11,9 +11,9 @@ public class Resource {
 
     enum ResourceName {
         NRGC("Энергокредиты"), MINE("Минералы"), FOOD("Пища"),
-        ALOY("Сплавы"), TMC("Технические материалы"), INFL("Влияние"),
-        UNTY("Единство"), SPTS("Научные очки"), DRKM("Темная материя"),
-        NANI("Наниты");
+        ALOY("Сплавы"), TMC("Технические материалы"),
+        INFL("Влияние"), UNTY("Единство"), SPTS("Научные очки"),
+        DRKM("Темная материя"), NANI("Наниты");
         private final String name;
         ResourceName(String name){
             this.name = name;
